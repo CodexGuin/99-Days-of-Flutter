@@ -1,4 +1,4 @@
-# 100 Days of Flutter - Day 1 - Listview UI Showcase
+# Day 1 - Listview UI Showcase
 ## Run it yourself!
 ```
 flutter pub get
@@ -16,6 +16,3 @@ flutter run
 
 ## Final Product
 ![](/assets/final/Day%201.gif)
-
-## Socials
-\* To be added *
