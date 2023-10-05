@@ -1,4 +1,4 @@
-# Day 2 - Listview UI Showcase
+# Day 2 - Theme Provider
 
 ## Run it yourself!
 ```
