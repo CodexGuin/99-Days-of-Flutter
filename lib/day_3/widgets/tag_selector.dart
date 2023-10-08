@@ -41,6 +41,7 @@ class _TagSelectorState extends State<TagSelector>
             _controller.forward();
           }
           _isSelected = !_isSelected;
+          // ignore: avoid_print
           print(widget.tag);
         },
         child: Container(

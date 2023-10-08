@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class NoteCards extends StatefulWidget {
   bool tl, tr, bl, br;
   final double? height;

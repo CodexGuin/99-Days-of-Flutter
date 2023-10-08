@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+// ignore: must_be_immutable
 class NoteCards extends StatefulWidget {
   final bool? tl, tr, bl, br;
   final double? height;
@@ -27,14 +28,10 @@ class NoteCards extends StatefulWidget {
 class _NoteCardsState extends State<NoteCards>
     with SingleTickerProviderStateMixin {
   bool _isFav = false;
-  late AnimationController _controller;
 
   @override
   void initState() {
     super.initState();
-
-    _controller = AnimationController(
-        duration: const Duration(milliseconds: 100), vsync: this);
   }
 
   final List<Color> noteCardsColor = [
