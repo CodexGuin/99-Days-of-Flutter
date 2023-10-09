@@ -1,3 +1,23 @@
 {
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#79ced5",
+        "activityBar.background": "#79ced5",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#ca55c1",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#79ced5",
+        "statusBar.background": "#52c0c9",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#37a8b1",
+        "statusBarItem.remoteBackground": "#52c0c9",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#52c0c9",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#52c0c999",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#52c0c9"
 }

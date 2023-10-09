@@ -9,6 +9,7 @@ Documentation of my 99 Days of Flutter challenge! See lib/day_x for specific day
 | 3   | [Todo App Design 1](/lib/day_3/README.md)      | 6 Oct 2023 |   ✔    | 4     |
 | 4   | [Todo App Design 2](/lib/day_4/README.md)      | 7 Oct 2023 |   -    | 3     |
 | 5   | [Glassmorphic UI Design](/lib/day_5/README.md) | 8 Oct 2023 |   ✔    | 3     |
+| 6   | [Rest API](/lib/day_6/README.md)               | 9 Oct 2023 |   ✔    | 2     |
 
 ## Run it yourself!
 ```
