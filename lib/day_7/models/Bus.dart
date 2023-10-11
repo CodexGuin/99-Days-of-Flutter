@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, constant_identifier_names
+
 import 'dart:convert';
 
 Bus busFromJson(String str) => Bus.fromJson(json.decode(str));

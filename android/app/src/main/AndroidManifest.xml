@@ -3,6 +3,8 @@
         android:label="ninety_nine_days_of_flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyAPfmAu6KMRrtw9p85w28yICNvG6jVurso"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -11,7 +11,8 @@ import 'package:flutter/material.dart';
 //import 'day_4/day_4_main.dart';
 //import 'day_5/day_5_main.dart';
 //import 'day_6/day_6_main.dart';
-import 'day_7/day_7_main.dart';
+//import 'day_7/day_7_main.dart';
+import 'day_8/day_8_main.dart';
 
 // * Main function after selecting day_x_main file
 /* void main() {
