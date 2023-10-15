@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -44,38 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAZFttb33S2cQzMUe7lkPn1mN-B5eDvT_I',
-    appId: '1:62197690780:web:0f114c924303a782231859',
-    messagingSenderId: '62197690780',
-    projectId: 'todo-ui-design-fa938',
-    authDomain: 'todo-ui-design-fa938.firebaseapp.com',
-    storageBucket: 'todo-ui-design-fa938.appspot.com',
-    measurementId: 'G-VHVRG4KK0P',
+    apiKey: 'AIzaSyCaW4ro-bxPcpG97B7cMtBpEp-O5ZG0r0U',
+    appId: '1:47373252800:web:7f4c92176c73fd9de35525',
+    messagingSenderId: '47373252800',
+    projectId: 'day-12---flutter-x-firebase',
+    authDomain: 'day-12---flutter-x-firebase.firebaseapp.com',
+    storageBucket: 'day-12---flutter-x-firebase.appspot.com',
+    measurementId: 'G-K89WGYGFLP',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA2Nw53ZLj4DL9_Pjvw_UugyUX-rb7s15Q',
-    appId: '1:62197690780:android:d763711e50ade867231859',
-    messagingSenderId: '62197690780',
-    projectId: 'todo-ui-design-fa938',
-    storageBucket: 'todo-ui-design-fa938.appspot.com',
+    apiKey: 'AIzaSyA-nAHWXx9f_auHVhkZOhcvYo4TR0uY2bQ',
+    appId: '1:47373252800:android:df1810c7a7803a5ce35525',
+    messagingSenderId: '47373252800',
+    projectId: 'day-12---flutter-x-firebase',
+    storageBucket: 'day-12---flutter-x-firebase.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBQt_OUbBMZyg6mGWjINPcjT8wpgyKiHaE',
-    appId: '1:62197690780:ios:5e9b26958857a7d0231859',
-    messagingSenderId: '62197690780',
-    projectId: 'todo-ui-design-fa938',
-    storageBucket: 'todo-ui-design-fa938.appspot.com',
+    apiKey: 'AIzaSyAr6w9KwVp5dnSVD99sZlSQKYJCleqgwmY',
+    appId: '1:47373252800:ios:50210d2a8cc52205e35525',
+    messagingSenderId: '47373252800',
+    projectId: 'day-12---flutter-x-firebase',
+    storageBucket: 'day-12---flutter-x-firebase.appspot.com',
     iosBundleId: 'com.example.ninetyNineDaysOfFlutter',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBQt_OUbBMZyg6mGWjINPcjT8wpgyKiHaE',
-    appId: '1:62197690780:ios:90b240add776e613231859',
-    messagingSenderId: '62197690780',
-    projectId: 'todo-ui-design-fa938',
-    storageBucket: 'todo-ui-design-fa938.appspot.com',
-    iosBundleId: 'com.example.ninetyNineDaysOfFlutter.RunnerTests',
   );
 }

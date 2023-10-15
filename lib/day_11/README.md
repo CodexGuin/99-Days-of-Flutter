@@ -1,7 +1,7 @@
 # Day 11 - Flutter x Firebase
 
 ## Brief
-Flutter implementation with Firebase, the official retry. Going to redesign my app landing page yet again, more iterations = better and more knowledge!
+Flutter implementation with Firebase, the official retry. Going to redesign my app landing page yet again, more iterations = better and more knowledge! Referencing from [Mitch Koko](https://www.youtube.com/watch?v=zohXXZBUVYI).
 
 ## Features
 - Landing page

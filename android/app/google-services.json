@@ -1,14 +1,13 @@
 {
   "project_info": {
-    "project_number": "62197690780",
-    "firebase_url": "https://todo-ui-design-fa938-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "todo-ui-design-fa938",
-    "storage_bucket": "todo-ui-design-fa938.appspot.com"
+    "project_number": "47373252800",
+    "project_id": "day-12---flutter-x-firebase",
+    "storage_bucket": "day-12---flutter-x-firebase.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:62197690780:android:d763711e50ade867231859",
+        "mobilesdk_app_id": "1:47373252800:android:df1810c7a7803a5ce35525",
         "android_client_info": {
           "package_name": "com.example.ninety_nine_days_of_flutter"
         }
@@ -16,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA2Nw53ZLj4DL9_Pjvw_UugyUX-rb7s15Q"
+          "current_key": "AIzaSyA-nAHWXx9f_auHVhkZOhcvYo4TR0uY2bQ"
         }
       ],
       "services": {

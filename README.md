@@ -15,6 +15,7 @@ Documentation of my 99 Days of Flutter challenge! See lib/day_x for specific day
 | 9   | [Rest API 4](/lib/day_9/README.md)             | 12 Oct 2023 |   ✔    | 1.5   |    8    |
 | 10  | [Provider](/lib/day_10/README.md)              | 13 Oct 2023 |   ✔    | 2.5   |   8.5   |
 | 11  | [Flutter x Firebase](/lib/day_11/README.md)    | 14 Oct 2023 |   ✔    | 1.5   |    7    |
+| 12  | [Flutter x Firebase 2](/lib/day_12/README.md)  | 15 Oct 2023 |   ✔    | 2     |    8    |
 
 ## Run it yourself!
 ```

@@ -1,5 +1,7 @@
 //import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:ninety_nine_days_of_flutter/firebase_options.dart';
 //import 'package:ninety_nine_days_of_flutter/firebase_options.dart';
 //import 'package:ninety_nine_days_of_flutter/day_2/theme/theme_provider.dart';
 //import 'package:provider/provider.dart';
@@ -15,7 +17,8 @@ import 'package:flutter/material.dart';
 //import 'day_8/day_8_main.dart';
 //import 'day_9/day_9_main.dart';
 //import 'day_10/day_10_main.dart';
-import 'day_11/day_11_main.dart';
+//import 'day_11/day_11_main.dart';
+import 'day_12/day_12_main.dart';
 
 // * Main function after selecting day_x_main file
 /* void main() {
@@ -25,9 +28,9 @@ import 'day_11/day_11_main.dart';
   ));
 } */
 
-// * Uncomment this for Firebase access ( Day 4 )
+// * Uncomment this for Firebase access ( Day 4, 12 )
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MainApp());
 }
