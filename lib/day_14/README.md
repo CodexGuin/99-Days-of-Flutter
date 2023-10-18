@@ -1,13 +1,17 @@
-# Day 13 - Flutter x Firebase 3
+# Day 14 - Flutter x Firebase 4
 
 ## Brief
 Flutter implementation with Firebase, the official retry. Going to redesign my app landing page yet again, more iterations = better and more knowledge! Referencing from [Mitch Koko](https://www.youtube.com/watch?v=zohXXZBUVYI).
 
 ## Features
 - Firebase authentication integration
-- Home page
+- Firebase Firestore Database integration
+- Home page (Mass chat app)
 - Register page
 - Login page
+- Forgot password page
+- Profile page
+- Users page
 - Drawer
 
 ## Main learning points
@@ -27,12 +31,19 @@ Flutter implementation with Firebase, the official retry. Going to redesign my a
 - [x] Home page
 - [x] Drawer
 - [x] Forgot password
+- [x] Every other pages
+- [x] Database integration
+- [x] Beautify app
 
 ## Bugs
-- After loging out, pressing the back button on the login screen freezes the app. Unsure why. (Fixed, kinda)
+- NIL
 
 ## Self-reflection for the day
-Mid day commit, didnt do much, just implemented the forgot password page, fix up drawer, and fix the bug above. Am worried about my lack of attention to secrets, so fretting about it now. Might spend 1 - 2 more days max on this project. May continue at night as well.
+Skipped yesterday as I was really too tired to do anything...
+
+Quite satisfied with today's result, spent less than 2 hrs, but really put in alot of effort! Copilot really helped me alot too lel.
+
+Managed to finish up the other pages. Added in firestore database to store user info and posts. Writing and displaying posts was not much of a problem once I got the hang of it. Settings page still not completed, but I'd give it a close on this project for now. Time to move on!
 
 ## Final Product
 Registration of user with Firebase Auth
@@ -46,6 +57,13 @@ Log in of user with Firebase Auth & Home page
 Forget password feature
 
 ![](/assets/final/Day%2013%20-%20Password%20Reset.gif)
+
+Home page featuring mass post wall
+
+![](/assets/final/Day%2014%20-%20Home%20page.gif)
+
+Other pages
+![](/assets/final/Day%2014%20-%20Other%20pages.gif)
 
 ## Run it yourself!
 ```
