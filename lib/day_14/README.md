@@ -63,6 +63,7 @@ Home page featuring mass post wall
 ![](/assets/final/Day%2014%20-%20Home%20page.gif)
 
 Other pages
+
 ![](/assets/final/Day%2014%20-%20Other%20pages.gif)
 
 ## Run it yourself!
