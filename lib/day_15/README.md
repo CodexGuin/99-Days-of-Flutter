@@ -1,4 +1,4 @@
-# Day 14 - Desktop Dashboard
+# Day 15 - Desktop Dashboard
 
 ## Brief
 Simple dashboard UI. Inspired by [Christian Damian](https://dribbble.com/shots/22854718-Base-gg-Web-App), iterated by me.

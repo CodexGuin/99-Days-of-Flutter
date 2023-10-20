@@ -1,28 +1,16 @@
 //import 'package:firebase_core/firebase_core.dart';
-//import 'package:firebase_core/firebase_core.dart';
+//import 'dart:io';
+
+//import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:ninety_nine_days_of_flutter/day_16/providers/current_action_provider.dart';
+import 'package:provider/provider.dart';
 //import 'package:ninety_nine_days_of_flutter/firebase_options.dart';
-import 'package:window_manager/window_manager.dart';
-//import 'package:ninety_nine_days_of_flutter/firebase_options.dart';
+//import 'package:window_manager/window_manager.dart';
 //import 'package:ninety_nine_days_of_flutter/day_2/theme/theme_provider.dart';
-//import 'package:provider/provider.dart';
 
 // ! Import the main file for the day you want to run.
-//import 'day_1/day_1_main.dart';
-//import 'day_2/day_2_main.dart';
-//import 'day_3/day_3_main.dart';
-//import 'day_4/day_4_main.dart';
-//import 'day_5/day_5_main.dart';
-//import 'day_6/day_6_main.dart';
-//import 'day_7/day_7_main.dart';
-//import 'day_8/day_8_main.dart';
-//import 'day_9/day_9_main.dart';
-//import 'day_10/day_10_main.dart';
-//import 'day_11/day_11_main.dart';
-//import 'day_12/day_12_main.dart';
-//import 'day_13/day_13_main.dart';
-//import 'day_14/day_14_main.dart';
-import 'day_15/day_15_main.dart';
+import 'day_16/day_16_main.dart';
 
 // * Main function after selecting day_x_main file
 /* void main() {
@@ -34,18 +22,30 @@ import 'day_15/day_15_main.dart';
 
 // * Uncomment this for Firebase access ( Day 4, 12 )
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  await windowManager.ensureInitialized();
-  WindowOptions windowOp = const WindowOptions(
-      center: true,
-      // Start with a 16:9 aspect ratio
-      size: Size(1280, 720),
-      minimumSize: Size(1000, 600),
-      maximumSize: Size(1500, 1000),
-      title: '99 Days of Flutter');
-  windowManager.waitUntilReadyToShow(windowOp, () {
+  /*
+  // * If system is not desktop, run the app normally
+  if (!kIsWeb &&
+      !Platform.isWindows &&
+      !Platform.isLinux &&
+      !Platform.isMacOS) {
     runApp(const MainApp());
-  });
-  //runApp(const MainApp());
+  } else {
+    // * If system is desktop, run the app in a window
+    WidgetsFlutterBinding.ensureInitialized();
+    await windowManager.ensureInitialized();
+    WindowOptions windowOp = const WindowOptions(
+        center: true,
+        // Start with a 16:9 aspect ratio
+        size: Size(1280, 720),
+        minimumSize: Size(1000, 600),
+        maximumSize: Size(1500, 1000),
+        title: '99 Days of Flutter');
+    windowManager.waitUntilReadyToShow(windowOp, () {
+      runApp(const MainApp());
+    });
+  } */
+
+  // * Day 16
+  runApp(ChangeNotifierProvider(
+      create: (context) => CurrentActionProvider(), child: const MainApp()));
 }
