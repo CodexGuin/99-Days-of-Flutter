@@ -21,6 +21,7 @@ Documentation of my 99 Days of Flutter challenge! See lib/day_x for specific day
 | 15   | [Desktop Dashboard](/lib/day_15/README.md)     | 19 Oct 2023 |   ✔    | 2.5   |    7    |
 | 16   | [Desktop Dashboard 2](/lib/day_16/README.md)   | 20 Oct 2023 |   ✔    | 3.5   |    8    |
 | 17   | [Desktop Dashboard 3](/lib/day_17/README.md)   | 21 Oct 2023 |   ✔    | 1     |    3    |
+| 18   | [Desktop Dashboard 4](/lib/day_18/README.md)   | 22 Oct 2023 |   ✔    | 2     |    7    |
 
 ## Run it yourself!
 ```

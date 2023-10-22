@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:ninety_nine_days_of_flutter/day_16/pages/top_panel.dart';
-import 'package:ninety_nine_days_of_flutter/day_16/providers/current_action_provider.dart';
-import 'package:ninety_nine_days_of_flutter/day_16/widgets/list_tiles.dart';
-import 'package:ninety_nine_days_of_flutter/day_16/widgets/tiles.dart';
-import 'package:provider/provider.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/panels.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/widgets/list_tiles.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/widgets/tiles.dart';
+
+// * Layouts
+import 'package:ninety_nine_days_of_flutter/day_18/pages/top%20layout/top_about.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/top%20layout/top_contact.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/top%20layout/top_home.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/top%20layout/top_settings.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/bottom%20layout/bottom_about.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/bottom%20layout/bottom_contact.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/bottom%20layout/bottom_home.dart';
+import 'package:ninety_nine_days_of_flutter/day_18/pages/bottom%20layout/bottom_settings.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -56,11 +64,6 @@ class _HomePageState extends State<HomePage> {
                             MListTile(
                               leading: Icons.home,
                               title: showTitle ? 'Home' : null,
-                              onTap: () {
-                                Provider.of<CurrentActionProvider>(context,
-                                        listen: false)
-                                    .setCurrentIdx(0);
-                              },
                               index: 0,
                             ),
                             SizedBox(height: showTitle ? 10 : 30),
@@ -69,11 +72,6 @@ class _HomePageState extends State<HomePage> {
                             MListTile(
                               leading: Icons.info,
                               title: showTitle ? 'About' : null,
-                              onTap: () {
-                                Provider.of<CurrentActionProvider>(context,
-                                        listen: false)
-                                    .setCurrentIdx(1);
-                              },
                               index: 1,
                             ),
                             SizedBox(height: showTitle ? 10 : 30),
@@ -82,11 +80,6 @@ class _HomePageState extends State<HomePage> {
                             MListTile(
                               leading: Icons.contact_page,
                               title: showTitle ? 'Contact' : null,
-                              onTap: () {
-                                Provider.of<CurrentActionProvider>(context,
-                                        listen: false)
-                                    .setCurrentIdx(2);
-                              },
                               index: 2,
                             ),
                             SizedBox(height: showTitle ? 10 : 30),
@@ -95,11 +88,6 @@ class _HomePageState extends State<HomePage> {
                             MListTile(
                               leading: Icons.settings,
                               title: showTitle ? 'Settings' : null,
-                              onTap: () {
-                                Provider.of<CurrentActionProvider>(context,
-                                        listen: false)
-                                    .setCurrentIdx(3);
-                              },
                               index: 3,
                             ),
                           ],
@@ -132,10 +120,12 @@ class _HomePageState extends State<HomePage> {
                       left: 7.5,
                       bottom: 7.5,
                       child: Center(
-                        child: Center(
-                          child: TopPanel(),
-                        ),
-                      ),
+                          child: Panel(pages: [
+                        TopHome(),
+                        TopAbout(),
+                        TopContact(),
+                        TopSettings()
+                      ])),
                     ),
                   ),
                   // * Bottom bar
@@ -145,13 +135,12 @@ class _HomePageState extends State<HomePage> {
                       left: 7.5,
                       top: 7.5,
                       child: Center(
-                        child: Center(
-                          child: Text(
-                            'Bottom',
-                            style: TextStyle(color: Colors.white70),
-                          ),
-                        ),
-                      ),
+                          child: Panel(pages: [
+                        BottomHome(),
+                        BottomAbout(),
+                        BottomContact(),
+                        BottomSettings()
+                      ])),
                     ),
                   ),
                 ],

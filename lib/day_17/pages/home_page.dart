@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ninety_nine_days_of_flutter/day_17/pages/top_panel.dart';
-import 'package:ninety_nine_days_of_flutter/day_17/providers/current_action_provider.dart';
 import 'package:ninety_nine_days_of_flutter/day_17/widgets/list_tiles.dart';
 import 'package:ninety_nine_days_of_flutter/day_17/widgets/tiles.dart';
-import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -101,22 +99,19 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            Flexible(
+            const Flexible(
               flex: 5,
               child: Column(
                 children: [
                   // * Top bar
                   Flexible(
                     child: Tile(
-                      color: const Color(0xFF1a1a1a),
+                      color: Color(0xFF1a1a1a),
                       left: 7.5,
                       bottom: 7.5,
                       child: Center(
-                        child: Container(
-                          //color: Colors.amber.withOpacity(0.05), // * Debug
-                          child: const Center(
-                            child: TopPanel(),
-                          ),
+                        child: Center(
+                          child: TopPanel(),
                         ),
                       ),
                     ),
@@ -124,17 +119,14 @@ class _HomePageState extends State<HomePage> {
                   // * Bottom bar
                   Flexible(
                     child: Tile(
-                      color: const Color(0xFF1a1a1a),
+                      color: Color(0xFF1a1a1a),
                       left: 7.5,
                       top: 7.5,
                       child: Center(
-                        child: Container(
-                          // color: Colors.amber.withOpacity(0.05), // * Debug
-                          child: const Center(
-                            child: Text(
-                              'Bottom',
-                              style: TextStyle(color: Colors.white70),
-                            ),
+                        child: Center(
+                          child: Text(
+                            'Bottom',
+                            style: TextStyle(color: Colors.white70),
                           ),
                         ),
                       ),
