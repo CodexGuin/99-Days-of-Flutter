@@ -2,6 +2,7 @@
 //import 'dart:io';
 //import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:ninety_nine_days_of_flutter/day_19/providers/top_about_drag_provider.dart';
 //import 'package:window_manager/window_manager.dart';
 
 // * Firebase
@@ -10,11 +11,11 @@ import 'package:flutter/material.dart';
 
 // * Providers
 import 'package:provider/provider.dart';
-import 'package:ninety_nine_days_of_flutter/day_18/providers/current_action_provider.dart';
+import 'package:ninety_nine_days_of_flutter/day_19/providers/current_action_provider.dart';
 //import 'package:ninety_nine_days_of_flutter/day_2/theme/theme_provider.dart';
 
 // ! Import the main file for the day you want to run.
-import 'day_18/day_18_main.dart';
+import 'day_19/day_19_main.dart';
 
 // * Main function after selecting day_x_main file
 /* void main() {
@@ -26,9 +27,20 @@ import 'day_18/day_18_main.dart';
 
 // * Uncomment this for Firebase access ( Day 4, 12 )
 void main() async {
-  // * Day 16, 17, 18
-  runApp(ChangeNotifierProvider(
-      create: (context) => CurrentActionProvider(), child: const MainApp()));
+  // * Day 16, 17, 18, 19
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => CurrentActionProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => TopAboutDragProvider(),
+        ),
+      ],
+      child: const MainApp(),
+    ),
+  );
 
   /*
   // * If system is not desktop, run the app normally
