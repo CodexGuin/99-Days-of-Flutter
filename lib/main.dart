@@ -2,7 +2,7 @@
 //import 'dart:io';
 //import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:ninety_nine_days_of_flutter/day_19/providers/top_about_drag_provider.dart';
+//import 'package:ninety_nine_days_of_flutter/day_19/providers/top_about_drag_provider.dart';
 //import 'package:window_manager/window_manager.dart';
 
 // * Firebase
@@ -10,26 +10,17 @@ import 'package:ninety_nine_days_of_flutter/day_19/providers/top_about_drag_prov
 //import 'package:firebase_core/firebase_core.dart';
 
 // * Providers
-import 'package:provider/provider.dart';
-import 'package:ninety_nine_days_of_flutter/day_19/providers/current_action_provider.dart';
+//import 'package:provider/provider.dart';
+//import 'package:ninety_nine_days_of_flutter/day_19/providers/current_action_provider.dart';
 //import 'package:ninety_nine_days_of_flutter/day_2/theme/theme_provider.dart';
 
 // ! Import the main file for the day you want to run.
-import 'day_19/day_19_main.dart';
+import 'day_20/day_20_main.dart';
 
-// * Main function after selecting day_x_main file
-/* void main() {
-  runApp(ChangeNotifierProvider(
-    create: (context) => ThemeProvider(),
-    child: const MainApp(),
-  ));
-} */
-
-// * Uncomment this for Firebase access ( Day 4, 12 )
+// * Modify as needed
 void main() async {
-  // * Day 16, 17, 18, 19
   runApp(
-    MultiProvider(
+    /* MultiProvider(
       providers: [
         ChangeNotifierProvider(
           create: (context) => CurrentActionProvider(),
@@ -37,9 +28,9 @@ void main() async {
         ChangeNotifierProvider(
           create: (context) => TopAboutDragProvider(),
         ),
-      ],
-      child: const MainApp(),
-    ),
+      ], */
+    /* child:  */ const MainApp(),
+    //),
   );
 
   /*
