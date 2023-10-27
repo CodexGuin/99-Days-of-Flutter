@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 //import 'package:ninety_nine_days_of_flutter/day_2/theme/theme_provider.dart';
 
 // ! Import the main file for the day you want to run.
-import 'day_20/day_20_main.dart';
+import 'day_21/day_21_main.dart';
 
 // * Modify as needed
 void main() async {
