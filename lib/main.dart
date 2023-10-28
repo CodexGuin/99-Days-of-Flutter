@@ -10,27 +10,25 @@ import 'package:flutter/material.dart';
 //import 'package:firebase_core/firebase_core.dart';
 
 // * Providers
-//import 'package:provider/provider.dart';
+import 'package:provider/provider.dart';
 //import 'package:ninety_nine_days_of_flutter/day_19/providers/current_action_provider.dart';
 //import 'package:ninety_nine_days_of_flutter/day_2/theme/theme_provider.dart';
+import 'package:ninety_nine_days_of_flutter/day_22/data/convo_data.dart';
 
 // ! Import the main file for the day you want to run.
-import 'day_21/day_21_main.dart';
+import 'day_22/day_22_main.dart';
 
 // * Modify as needed
 void main() async {
   runApp(
-    /* MultiProvider(
+    MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => CurrentActionProvider(),
+          create: (context) => Convo(),
         ),
-        ChangeNotifierProvider(
-          create: (context) => TopAboutDragProvider(),
-        ),
-      ], */
-    /* child:  */ const MainApp(),
-    //),
+      ],
+      child: const MainApp(),
+    ),
   );
 
   /*

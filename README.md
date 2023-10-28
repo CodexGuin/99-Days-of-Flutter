@@ -25,6 +25,7 @@ Documentation of my 99 Days of Flutter challenge! See lib/day_x for specific day
 | 19 ! | [Desktop Dashboard 5](/lib/day_19/README.md)   | 24 Oct 2023 |   ✔    | 2     |   7.5   |
 | 20 ! | [C1 - Instagram](/lib/day_20/README.md)        | 26 Oct 2023 |   ✔    | 3.5   |   8.5   |
 | 21   | [C2 - Telegram](/lib/day_21/README.md)         | 27 Oct 2023 |   ✔    | 3.5   |   7.5   |
+| 22   | [C2 - Telegram 2](/lib/day_22/README.md)       | 28 Oct 2023 |   ✔    | 2     |   7.5   |
 
 ## Run it yourself!
 ```

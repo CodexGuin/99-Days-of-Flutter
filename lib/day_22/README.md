@@ -1,4 +1,4 @@
-# Day 21 - C2 - Telegram
+# Day 22 - C2 - Telegram 2
 
 ## Brief
 Next up, Telegram. 2 - 3 parts as it is alot more complicated.
@@ -15,6 +15,7 @@ Next up, Telegram. 2 - 3 parts as it is alot more complicated.
 - Custom scroll view
 - Nested classes
 - Richtext and text span
+- Modularity
 
 ## To work on / Features to be added
 
@@ -23,19 +24,21 @@ Next up, Telegram. 2 - 3 parts as it is alot more complicated.
 - [x] Modular design
 - [x] Dark theme
 - [ ] Theme changer
+- [x] Provider
+- [x] Chat page (Not fully done)
 
 ## Bugs
 - Possible overflow if > 2 lines for richtext
 
 ## Self-reflection for the day
-Pretty good progress. Mostly no problem, except for the app bar design. Unsure how to align the title properly using the SliverAppBar widget.
+Mainly wanted to refactor the code and make it better. Adjusted UIs to make it friendlier too. I think I did a pretty good job for 1.5hr of work. Created a simple chat page, still havent populate it with the convos yet.
 
-Happy with how modular the code is! Not the best of the best effort, but still passable.
+Implemented providers and functions for adding, deleting, and pinning convos using it. Fully functional!
 
-Will be working on the actual chatting page tomorrow, and possibly Firebase integration the following day.
+Might skip tomorrow, graduation ceremony day!
 
 ## Final Product
-![](/assets/final/Day%2021.gif)
+![](/assets/final/Day%2022.gif)
 
 ## Run it yourself!
 ```
