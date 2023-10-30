@@ -19,5 +19,6 @@
         "titleBar.inactiveBackground": "#52c0c999",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#52c0c9"
+    "peacock.color": "#52c0c9",
+    "cmake.sourceDirectory": "D:/Github Repositories/99 Days of Flutter/windows"
 }
